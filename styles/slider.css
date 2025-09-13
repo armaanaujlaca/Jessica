@@ -248,7 +248,7 @@
 
 @media (max-width: 1000px){
   .caro{
-  height: 2000px;
+  height: 1800px;
   overflow: hidden;
   position: relative;
 }
@@ -269,11 +269,6 @@
     --item3-transform: translate(50%, 10%) scale(1.2);
     --item4-transform: translate(90%, 20%) scale(1);
     --item5-transform: translate(120%, 30%) scale(0.8);
-  }
-
-  /* give carousel more height */
-  .caro {
-    height: 2000px; /* was 600px */
   }
 
   /* resize text so it’s big but not overflowing */
@@ -297,3 +292,4 @@
   }
   
 }
+
