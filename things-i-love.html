@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Things</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/texts.css">
+  <link rel="stylesheet" href="styles/modal.css">
+  <link rel="stylesheet" href="styles/gallery.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="menu-icon" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div id="sideMenu" class="side-menu">
+    <span class="close-btn" onclick="closeMenu()">&times;</span>
+    <a href="index.html">Home</a>
+    <a href="story.html">Our Story</a>
+    <a href="things-i-love.html">Things I love about Jessica!</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="letter.html" id="locker">Letter</a>
+  </div>
+  <div class="timediff">Things I love about my Jessica!</div>
+  <div class="list">
+    Her eyes, her hair, her hands, her heart, her kisses, her body, her face, her smile, her anger,her jokes, her humour, her care for me,
+     the way she laughs, her voice, her calls, her texts, her fits, her aesthetics, her love, her kindness, her photos, her videos, 
+     holding her hands, her hugs, the way she looks at me, her lips, her neck, her mood swings, EVERYTHING ABOUT HER. 
+  </div>
+  <div id="lockerModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Enter Locker Password</h2>
+      <input type="passowrd" id="lockerPassword" placeholder="Enter Password">
+      <button id="unlockBtn">Unlock</button>
+      <p id="lockerError" style="color: red; display: none;">Incorrect Password</button>
+    </div>
+  </div>
+  <script src="js/locker.js" defer></script>
+  <script src="js/menu.js" defer></script>
+</body>
+</html>

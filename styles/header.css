@@ -1,0 +1,121 @@
+.topbar{
+  background-color: #ffb6c1;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom-width: 5px;
+  border-color: rgba(255, 0, 115, 0.4);
+  border-bottom-style: solid;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1200; /* always on top */
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.menu-icon span {
+  display: block;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+
+
+.side-menu{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,182,193,0.95);
+  overflow-x: hidden;
+  transition: width 0.35s ease;
+  padding-top: 80px;
+  box-shadow: -4px 0 10px rgba(0,0,0,0.2);
+  z-index: 1100;
+}
+
+.side-menu .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 80px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.side-menu .close-btn:hover {
+  color: #ff0073;
+}
+
+
+.side-menu a{
+  display: block;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: "Pacifico", cursive;
+  transition: 0.3s;
+}
+
+.side-menu a:hover{
+  color: #ff0073
+}
+
+.side-menu.open{
+  width: 250px;
+}
+
+@media screen and (max-width: 1000px) {
+  .topbar{
+    height: 100px;
+  }
+  .menu-icon{
+    height: 65px;
+    width: 90px;
+  }
+  .menu-icon span{
+    display: block;
+    height: 8px;       /* thicker than 4px */
+    background-color: #fff;
+    border-radius: 3px; /* a bit more rounded so it looks balanced */
+    transition: all 0.3s ease;
+    }
+  .side-menu.open{
+    width: 100%;
+  }
+  .side-menu{
+    padding-top: 120px;
+  }
+  .side-menu.options{
+    font-size: 500px;
+  }
+  .side-menu a{
+    font-size: 50px;
+
+  }
+}

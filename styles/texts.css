@@ -1,0 +1,66 @@
+.timediff{
+  color: #fff;
+  z-index: 100;
+  margin-top: 120px;
+  text-align: center;
+  font-size: 45px;
+  font-family: "Pacifico", cursive;
+  text-shadow: 3px 3px 5px rgba(255, 0, 115, 0.8);
+}
+
+#timer{
+  color: #ff0073;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255,0,115,0.8);
+}
+
+.fa-heart{
+  color: #ff0073;
+  font-size: 50px;
+  animation: pulse 1s infinite;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+@keyframes pulse{
+  0% {transform: scale(1);}
+  50% {transform: scale(1.2);}
+  100% {transform: scale(1);}
+}
+
+.photos{
+  text-align: center;
+}
+.image{
+  padding: 0;
+  margin: 0;
+  margin: 40px auto;
+  margin-bottom: 0;
+  border-radius: 15px;
+  border-style: solid;
+  display: block;
+  width: 90%;
+  max-width: 700px;
+  height: 90%;
+  max-height: 500px;
+  overflow: hidden;
+  object-fit: cover;
+  border-width: 10px;
+  border-color: white;
+  box-shadow: 0 0 0 2px black, 0 5px 25px rgba(0,0,0,0.3);
+}
+
+.image-text{
+  font-family: 'Pacifico', cursive;
+  color: rgb(242, 62, 182);
+}
+
+.list{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 50px;
+  font-family: 'Pacifico', cursive;
+  color: rgb(242, 62, 182);
+  font-size: 50px;
+  padding:0 100px;
+}

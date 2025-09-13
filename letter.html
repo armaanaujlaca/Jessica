@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Letter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/texts.css">
+  <link rel="stylesheet" href="styles/modal.css">
+  <link rel="stylesheet" href="styles/gallery.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="menu-icon" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div id="sideMenu" class="side-menu">
+    <span class="close-btn" onclick="closeMenu()">&times;</span>
+    <a href="index.html">Home</a>
+    <a href="story.html">Our Story</a>
+    <a href="things-i-love.html">Things I love about Jessica!</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="letter.html" id="locker">Letter</a>
+  </div>
+  <div>helloooo</div>
+  <div id="lockerModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Enter Locker Password</h2>
+      <input type="passowrd" id="lockerPassword" placeholder="Enter Password">
+      <button id="unlockBtn">Unlock</button>
+      <p id="lockerError" style="color: red; display: none;">Incorrect Password</button>
+    </div>
+  </div>
+  <div class="image-text" style="margin-top: 100px; font-size: 25px;">Happy 7th Month Anniversary Sweetheart. These 7 months have been the happiest months of my life.
+    You are the most amazing person I have ever met in my life. I know we have been fighting alot recently but I believe in our love for each other. 
+    We will get through this phase and stay together forever. I cannot imagine a day without talking to you. Every little small gesture of love that you show makes my day.
+    You are the only one I wanna run to when life feels hard. I never imagined I would date someone so perfect and gorgeous. Long distance is hard but distance doesnt matter
+     our love does. Im brave enough to say I hate this distance between us but Im confident enough to say we will make it. There will be a day when we both come back home tired from work
+     and we cook together while yapping about how our day was. I hate waiting but if it means we will be together one day, I can wait forever. Ive seen people talk about honeymoon stage 
+     online and they say it ends within 3 months but for our relationship its been 7 months and still hasnt ended. Theres still so much excitement in our texts. I cant wait to go back to India and see you.
+     I loved you yesterday, I love you today, and I will love you for the rest of my life <3. Happy 7th Anniversary Jessica.
+  </div>
+  <script src="js/locker.js" defer></script>
+  <script src="js/menu.js" defer></script>
+</body>
+</html>
