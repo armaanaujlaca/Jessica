@@ -17,7 +17,7 @@
 .fa-heart{
   color: #ff0073;
   font-size: 50px;
-  animation: pulse 1s infinite;
+  <!--animation: pulse 1s infinite;-->
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -63,4 +63,5 @@
   color: rgb(242, 62, 182);
   font-size: 50px;
   padding:0 100px;
+
 }
